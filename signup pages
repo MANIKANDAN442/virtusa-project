@@ -1,0 +1,52 @@
+signup.js
+import React, { usesState } from "react";
+import { Redirect } from 'react-router';
+import { Link } from "react-router-dom";
+import './signup.css';
+
+function Signup() {
+    
+    return (
+        <div>
+            <center>
+            <p className="App1"><h1 style={{ color: "white"}} ><strong>Remote Hire</strong></h1></p>
+                    <h1 style={{ color: "Red" }}>Sign Up</h1>
+                <form>
+                    <input type="text" placeholder="Enter email" className="form-control" /><br />
+                    <input type="text" placeholder="Enter Username" className="form-control" /><br />
+                    <input type="text" placeholder="Enter Mobilenumber" className="form-control" /><br />
+                    <input type="text" placeholder="password" className="form-control" /><br />
+                    <input type="text" placeholder="Confirm Password" className="form-control" />
+                    <br />
+                    <button className="button-container">Submit</button>
+                </form>
+            </center>    
+        </div>
+    );
+}
+
+export default Signup;
+
+CSS file
+
+sigup.css
+
+body 
+{
+    background-color: rgba(201, 76, 76, 0.3);
+}
+.App1 {
+    text-align: left;
+}
+.button-container
+{
+  color: white;
+  background-color: red;
+  border-color:rgba(201, 76, 76);
+}
+.form-control {
+    line: height 50px; ;
+}
+ 
+
+   
