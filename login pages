@@ -1,0 +1,64 @@
+login.js
+
+import React from 'react';
+import { Link } from "react-router-dom";
+import './login.css'
+
+function Login() {
+    return (
+        <div className="App">
+            <p className="App1"><h1 style={{ color: "white"}} ><strong>Remote Hire</strong></h1></p>
+            <center>
+                <h2 style={{ color: "red"}}>Login</h2>
+                <form>
+                    <input type="text" placeholder="Enter email" className="form-control" />
+                    <br />
+                    <input type="text" placeholder="Enter password" className="form-control" />
+                    <br />
+                    <button className="button-container">login</button><br />
+                     <p className ="controler">New Users? <Link to="/signup">signup</Link></p>
+                </form>
+            </center>
+        </div>
+    );
+}
+export default Login;
+
+CSS text file
+
+login.css
+
+body 
+{
+    background-color: rgba(201, 76, 76, 0.3);
+}
+.button-container
+{
+  color: white;
+  background-color: red;
+}
+.App1
+{
+    border-style: solid;
+    border-bottom-color: red;
+    border-top-color: red;
+    border-left-color: red; 
+    border-right-color: red;
+    background-color: red; 
+
+    margin: top;
+}
+.form-control {
+      border-style: solid;
+      border-color:orangered ;
+}
+.text1 
+{
+    color: red;   
+}
+.controler {
+    line-height: 0.8px;
+    text-decoration: none;
+}
+
+
